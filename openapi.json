@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Local API",
+    "version": "1.0.0",
+    "description": "API documentation with live interactive execution."
+  },
+  "paths": {
+    "/api/v1/version.json": {
+      "get": {
+        "summary": "Get version",
+        "description": "Returns the current API version and build metadata.",
+        "responses": {
+          "200": { "description": "Successful response" }
+        }
+      }
+    },
+    "/api/get-ram.json": {
+      "get": {
+        "summary": "Get RAM status",
+        "description": "Returns current RAM status configuration.",
+        "responses": {
+          "200": { "description": "Successful response" }
+        }
+      }
+    }
+  }
+}
